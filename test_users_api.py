@@ -6,6 +6,7 @@ faker = faker.Faker()
 
 base_url = "https://reqres.in"
 
+
 # test cases
 def test_get_test():
     url = base_url + "/api/users"
@@ -42,6 +43,7 @@ def test_delete_user():
     assert response.status_code == 204
     print(f" user with id {user_id} deleted")
     print('the random name is: ' + random_first_name)
+
 
 # utility functions
 def create_user(name, job):
