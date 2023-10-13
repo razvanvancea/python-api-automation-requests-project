@@ -6,7 +6,7 @@ faker = faker.Faker()
 
 base_url = "https://reqres.in"
 
-#test cases
+# test cases
 def test_get_test():
     url = base_url + "/api/users"
     response = requests.get(url)
@@ -43,7 +43,7 @@ def test_delete_user():
     print(f" user with id {user_id} deleted")
     print('the random name is: ' + random_first_name)
 
-#utility functions
+# utility functions
 def create_user(name, job):
     url = base_url + "/api/users"
     headers = {"Content-Type": "application/json"}
