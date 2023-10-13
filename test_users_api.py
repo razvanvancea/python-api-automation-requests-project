@@ -34,6 +34,7 @@ def test_create_user():
     user_id = json_data["id"]
     return user_id
 
+
 def test_delete_user(id):
     url = base_url + f"/api/users/{id}"
     response = requests.delete(url)
